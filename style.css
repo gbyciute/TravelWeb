@@ -1,0 +1,147 @@
+.top-bar {
+  background-color: rgb(167, 140, 135);
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-bar a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: rgb(199, 180, 176);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+}
+
+.navigation a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navigation .logotipas {
+  height: 55px;
+  padding: 4px;
+}
+
+main {
+  min-height: 1000px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("images/beach.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+main .first_text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 100px;
+}
+main .first_text h1 {
+  color: white;
+  font-size: 60px;
+}
+main .first_text p {
+  color: white;
+  font-size: 25px;
+}
+
+.destinations {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+.destinations .pic {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+}
+.destinations .pic img, .destinations iframe {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.destinations .pic_text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.destinations .buttondest {
+  color: azure;
+}
+
+.recomendations {
+  padding: 30px;
+  margin-top: 80px;
+}
+.recomendations h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: azure;
+}
+.recomendations .recomendations_content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.recomendations .recomendations_content .recomendations_text {
+  flex: 1;
+}
+.recomendations .recomendations_content .recomendations_text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: azure;
+}
+.recomendations .recomendations_content img {
+  width: 600px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.autorent {
+  display: flex;
+  flex-direction: column;
+}
+.autorent .autorent_image {
+  display: flex;
+}
+.autorent .rentimg {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-color: aliceblue;
+  border-style: groove;
+}
+.autorent .autorent_text {
+  color: azure;
+}/*# sourceMappingURL=style.css.map */
